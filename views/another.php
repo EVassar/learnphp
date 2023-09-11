@@ -22,6 +22,7 @@ class Box {
     }
 
     public function volume() {
+        var_dump(self::$count);
         return $this -> length * $this -> height * $this -> width;
     }
     public function getLength() {
@@ -48,6 +49,9 @@ class MetalBox extends Box {
 }
 
 $box = new MetalBox(1,1,1);
+
+$box -> volume();
+
 MetalBox::countup();
 
 MetalBox::countup();
