@@ -2,11 +2,15 @@
 
 namespace App\Controllers;
 
+
+
 class PublicController {
     public function home() {
-        echo 'home page';
+    $name = 'Erlemd';
+    $num = 10;
+        view('home', compact('name', 'num'));
     }
     public function about() {
-        echo 'about';
+        view('about');
     }
 }

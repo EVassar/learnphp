@@ -1,8 +1,8 @@
     <ul>
         <li>
-            <a href="index2.php">Home</a>
+            <a href="/">Home</a>
         </li>
         <li>
-            <a href="about.php">About</a>
+            <a href="/about">About</a>
         </li>
     </ul>
