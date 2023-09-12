@@ -13,4 +13,11 @@ class PublicController {
     public function about() {
         view('about');
     }
+    public function test() {
+        var_dump($_POST);
+        view('form');
+    }
+    public function testAnswer(){
+        var_dump($_POST);
+    }
 }
