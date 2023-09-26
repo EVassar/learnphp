@@ -15,8 +15,10 @@ class PublicController {
         view('about');
     }
     public function test() {
-        var_dump($_POST);
-        view('form');
+        session_start();
+        //setcookie('my_cookie', 'tasty', time() + 60 * 60 * 24 * 30, '', '', false, true);
+        //var_dump($_COOKIE);
+        var_dump($_SESSION);
     }
     public function testAnswer(){
         var_dump($_POST);

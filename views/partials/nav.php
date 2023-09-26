@@ -14,7 +14,6 @@
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
       <a class="navbar-item" href="/">
-        Home
       </a>
 
       <a class="navbar-item" href="/admin/articles">
@@ -46,6 +45,18 @@
 
     <div class="navbar-end">
       <div class="navbar-item">
+        <?php if(auth()): ?>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <?=auth()->email?>
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="/logout">
+                Logout
+              </a>
+            </div>
+          </div>
+        <?php else: ?>
         <div class="buttons">
           <a class="button is-primary" href="/register">
             <strong>Sign up</strong>
@@ -54,6 +65,7 @@
             Log in
           </a>
         </div>
+        <?php endif; ?>
       </div>
     </div>
   </div>
