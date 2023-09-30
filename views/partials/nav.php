@@ -16,28 +16,21 @@
       <a class="navbar-item" href="/">
       </a>
 
-      <a class="navbar-item" href="/admin/articles">
-        Admin
+      <a class="navbar-item" href="/about">
+        About
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          More
+          Admin
         </a>
 
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="/about">
-            About
+          <a class="navbar-item" href="/admin/users">
+            Users
           </a>
-          <a class="navbar-item">
-            Jobs
-          </a>
-          <a class="navbar-item">
-            Contact
-          </a>
-          <hr class="navbar-divider">
-          <a class="navbar-item">
-            Report an issue
+          <a class="navbar-item" href="/admin/articles">
+            Articles
           </a>
         </div>
       </div>

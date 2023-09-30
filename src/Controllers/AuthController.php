@@ -41,4 +41,5 @@ class AuthController {
         unset($_SESSION['user']);
         header('Location: /');
     }
+
 }
