@@ -1,10 +1,10 @@
 <?php
 
 use App\Controllers\ArticlesController;
-use app\Controllers\AuthController;
+use App\Controllers\AuthController;
 use App\Router;
 use App\Controllers\PublicController;
-use app\Controllers\UserController;
+use App\Controllers\UserController;
 
 Router::get('/', [PublicController::class, 'home']);
 
